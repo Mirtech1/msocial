@@ -9,7 +9,14 @@
     <title>Login</title>
 </head>
 <body class="bg-dark">
-    
+<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
+        <div class="container-fluid ">
+            <div class="nav-item ml-auto">
+                
+        </div>
+    </nav>
+        
 <center>
     <div class="col-lg-4 card mt-3">
     <div class="card-header">

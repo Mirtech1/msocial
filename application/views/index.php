@@ -9,7 +9,14 @@
     <title>Sign Up</title>
 </head>
 <body class="bg-dark">
-   
+<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
+        <div class="container-fluid ">
+            <div class="nav-item ml-auto">
+                
+               <a href="login"><button class="btn btn-outline-primary btn-sm">Login</button></a> 
+            </div>
+    </nav>
      <center>
     <div class="col-lg-5 card mt-3 mb-3">
         <div class="card-header">
@@ -146,7 +153,7 @@
         <center><input type="password" class="form-control mb-3" id="pass" placeholder="Password" onkeyup="checkLength()"></center>
         <p id="errorMessage" class="mb-0 mt-0"></p>
         <center><input type="password" class="form-control mb-3" id="copass" placeholder="Confirm password" onkeyup="myFunction()"></center>
-        <center><a href="login" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>
+        <center><a href="#" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>
         </form>
     </div>
     <script src="assets/form.js"></script>
