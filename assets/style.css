@@ -1,0 +1,22 @@
+img{
+    width: 100vh;
+    height: 70%;
+}
+.round{
+    height: 50%;
+}
+.space{
+    border-radius: 10px;
+    width: 80%;
+}
+.nodec{
+    text-decoration: none;
+}
+.big{
+    font-size: xxx-large;
+    font-family: cursive;
+}
+.lit{
+    font-size: x-large;
+    font-family: fantasy;
+}
