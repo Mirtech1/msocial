@@ -41,7 +41,7 @@ function lNameCheck() {
 }
 function emailCheck() {
     let email = document.getElementById("Email").value;
-    if (email.includes("@gmail.com")) {
+    if (email.includes("@") && email.includes(".com")) {
         document.getElementById("email").style.color = "green";
         document.getElementById("email").innerHTML = "Looks good";
     }else{
