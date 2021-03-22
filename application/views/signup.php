@@ -23,10 +23,10 @@
        <center><h1 class="text-success text-left">Sign Up</h1></center>
        <p class="text-left">It's quick and easy</p>
        </div>
-       <form class="card-body" onsubmit=" return clickBut()">
+       <form class="card-body" onsubmit="return clickBut()">
            <div class="row">
                <div class="col-6">
-                <center><input type="text" class="form-control mb-3" placeholder="First name" id="validationCustom01" required></center>
+                <center><input type="text" class="form-control mb-3" placeholder="First name" required></center>
                </div>
                <div class="col-6">
                 <center><input type="text" class="form-control mb-3" placeholder="Last name" required></center>
@@ -153,7 +153,7 @@
         <center><input type="password" class="form-control mb-3" id="pass" placeholder="Password" onkeyup="checkLength()"></center>
         <p id="errorMessage" class="mb-0 mt-0"></p>
         <center><input type="password" class="form-control mb-3" id="copass" placeholder="Confirm password" onkeyup="myFunction()"></center>
-        <center><a href="#" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>
+        <center><a href="#" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit">Sign up</button></a></center>
         </form>
     </div>
     <script src="assets/form.js"></script>
