@@ -25,6 +25,7 @@ function lNameCheck() {
     }else{
         document.getElementById("lName").style.color = "red"
         document.getElementById("lName").innerHTML = "Invalid Last Name"
+        event.preventDefault()
     }
 }
 function emailCheck() {
@@ -35,6 +36,7 @@ function emailCheck() {
     }else{
         document.getElementById("email").style.color = "red"
         document.getElementById("email").innerHTML = "Invalid Email"
+        event.preventDefault()
     }
 }
 function uNameCheck() {
@@ -45,6 +47,7 @@ function uNameCheck() {
     }else{
             document.getElementById("uName").style.color = "red"
             document.getElementById("uName").innerHTML = "Invalid Username"
+            event.preventDefault()
     }
 }
 

@@ -9,35 +9,37 @@
     <title>Sign Up</title>
 </head>
 <body class="bg-dark">
-<nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-        <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
-        <div class="container-fluid ">
-            <div class="nav-item ml-auto">
-                
-               <a href="login"><button class="btn btn-outline-primary btn-sm">Login</button></a> 
-            </div>
-    </nav>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
+            <a href="login.html" class="ml-auto nav-item"><button class="btn btn-sm btn-outline-primary">Login</button></a>
+        </nav>
+    </div>
      <center>
     <div class="col-lg-5 card mt-3 mb-3">
         <div class="card-header">
        <center><h1 class="text-success text-left">Sign Up</h1></center>
        <p class="text-left">It's quick and easy</p>
        </div>
-       <form class="card-body" onsubmit="return clickBut()">
+       <form class="card-body" onsubmit="return clickBut()" action="submit">
            <div class="row">
                <div class="col-6">
-                <center><input type="text" class="form-control mb-3" placeholder="First name" required></center>
+                <p id="fName"></p>
+                <center><input type="text" class="form-control mb-3" placeholder="First name" id="fname" onkeyup="fNameCheck()"></center>
                </div>
                <div class="col-6">
-                <center><input type="text" class="form-control mb-3" placeholder="Last name" required></center>
+                   <p class="lName"></p>
+                <center><input type="text" class="form-control mb-3" placeholder="Last name" id="lname" onkeyup="lNameCheck()"></center>
               </div>
             </div>
     <div class="row">
             <div class="col-6">
-                <center><input type="text" class="form-control mb-3" placeholder="Email" required></center>
+                <p class="email"></p>
+                <center><input type="text" class="form-control mb-3" placeholder="Email" id="Email" onkeyup="emailCheck()"></center>
                 </div>
                 <div class="col-6">
-                <center><input type="text" class="form-control mb-3" placeholder="Username" required></center>
+                    <p id="uName"></p>
+                <center><input type="text" class="form-control mb-3" placeholder="Username" id="username" onkeyup="uNameCheck()"></center>
                 </div>
             </div>
             <div>
@@ -136,7 +138,7 @@
             </div>
                 <p class="text-left mt-2"><strong>Gender</strong></p>
             <div class="row">
-                <div class="form-check col-3 form-control">
+                <div class="form-check col-3 ml-3 form-control">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">Male</label>
                   </div>
@@ -153,7 +155,7 @@
         <center><input type="password" class="form-control mb-3" id="pass" placeholder="Password" onkeyup="checkLength()"></center>
         <p id="errorMessage" class="mb-0 mt-0"></p>
         <center><input type="password" class="form-control mb-3" id="copass" placeholder="Confirm password" onkeyup="myFunction()"></center>
-        <center><a href="#" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit">Sign up</button></a></center>
+        <center><a href="login" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>
         </form>
     </div>
     <script src="assets/form.js"></script>
