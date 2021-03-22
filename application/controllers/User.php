@@ -15,7 +15,7 @@ class User extends CI_Controller{
     }*/
 
     // This handles the pages
-  public function view ($page = 'index')
+  public function view ($page = 'signup')
   {
     if(!file_exists('application/views/'.$page.'.php'))
     {
