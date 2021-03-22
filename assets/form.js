@@ -2,6 +2,7 @@ function myFunction(){
     if(document.getElementById("pass").value !== document.getElementById("copass").value){
         document.getElementById("errorMessage").style.color = "red";
         document.getElementById("errorMessage").innerHTML = "passwords do not match";
+        event.preventDefault()
     }else{
         document.getElementById("errorMessage").innerHTML = "";
     }
@@ -9,13 +10,15 @@ function myFunction(){
 function checkLength(){
     let passlength = document.getElementById("pass").value;
     if (passlength.length >= 6) {
-    document.getElementById("length").innerHTML = ""
+        document.getElementById("length").innerHTML = ""
     }else{
-    document.getElementById("length").innerHTML = "passwords must contain six characters or more"
+        document.getElementById("length").style.color = "red";
+        document.getElementById("length").innerHTML = "passwords must contain six characters or more"
+        event.preventDefault()
     }
 }
 function clickBut(){
-    return (lNameCheck(), emailCheck(), uNameCheck(), fNameCheck())
+    return (lNameCheck(), emailCheck(), uNameCheck(), fNameCheck(), myFunction(), checkLength())
 }
 function fNameCheck() {
     let lname = document.getElementById("fname").value;
