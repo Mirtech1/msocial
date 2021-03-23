@@ -18,8 +18,8 @@
     <div class="banner jumbotron bg-dark mt-5">
         <h1 class="text-warning tlarge ms-5">Connect with the world</h1>
         <p class="slogan text-warning ms-5">Have Fun...</p>
-        <a href="#"><button class="btn btn-outline-primary btn-lg ms-5">Login</button></a>
-        <a href="#"><button class="btn btn-outline-success btn-lg ms-2">Sign Up</button></a>
+        <a href="login"><button class="btn btn-outline-primary btn-lg ms-5">Login</button></a>
+        <a href="signup"><button class="btn btn-outline-success btn-lg ms-2">Sign Up</button></a>
     </div>
     <script src="assets/bootstrap 5/js/bootstrap.js"></script>
     <script src="assets/fontawesome/js/all.js"></script>

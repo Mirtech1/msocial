@@ -12,7 +12,7 @@
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
-            <a href="login.html" class="ml-auto nav-item"><button class="btn btn-sm btn-outline-primary">Login</button></a>
+            <a href="login" class="ml-auto nav-item"><button class="btn btn-sm btn-outline-primary">Login</button></a>
         </nav>
     </div>
      <center>
