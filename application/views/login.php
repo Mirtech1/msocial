@@ -25,7 +25,7 @@
         <form class="card-body">
         <center><input type="text" class="form-control mb-2" placeholder="Username/Email" required></center>
         <center><input type="password" class="form-control mb-2" placeholder="Password" required></center>
-        <center><a href="feed"><button class="btn btn-outline-primary btn-lg space" type="">Login</button></a></center>
+        <center><a href="feed"><button class="btn btn-outline-primary btn-lg space" type="submit">Login</button></a></center>
         <center><p class="mt-2"><a href="#">Forgotten Password?</a></p></center>
         </form>
     </div>
