@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/bootstrap 5/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
 <body class="bg-dark">
     <div class="row">
     <div class="col-3">
-        
+
     </div>
     <div class="card col-5 mt-1">
     <div class="card-header">
@@ -55,8 +56,8 @@
             <div class="nav-item mt-2">
                 <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
             </div>
-            <div class="nav-item ml-auto">
-                <a href="#"><button class="btn btn-lg btn-dark pb-1"><p class="btlarge">Create a post</p></button></a>
+            <div class="nav-item ml-1">
+               <textarea name="post" id="post" cols="50" rows="2" class="form-control pt-3 bg-dark text-light" placeholder="What's Happening?" style="border: none; font-size: x-large;"></textarea>
             </div>
     </nav>
     </div>
