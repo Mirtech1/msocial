@@ -58,3 +58,6 @@ img{
 ul{
     list-style-type: none;
 }
+.long{
+    height: 100vh;
+}

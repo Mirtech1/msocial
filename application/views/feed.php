@@ -24,7 +24,7 @@
         </div>
     </div>
     <div class="col-5">
-    <div class="bside">
+    <div class="bside long">
     <div class="bbot">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
                     <h4>Home</h4>
@@ -55,7 +55,8 @@
         <div class="card-body">
             <div>
                 <h5 class="text-dark text-center">Welcome to Msocial</h5>
-                <p class="text-center text-dark">This is the best place to meet people, have fun</p>
+                <p class="text-center text-dark">This is the best place to meet people and have fun.<br>Dive in now!!!</p>
+                <center><button class="btn btn-warning ">Let's go</button></center>
             </div>
         </div>
     </div>
