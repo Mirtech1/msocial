@@ -67,7 +67,10 @@ ul{
 .stext{
     font-size: x-large;
 }
-.
-silist:hover{
+.silist:hover{
     text-decoration: none;
+    color: gold;
+}
+.silist{
+    color: black;
 }
