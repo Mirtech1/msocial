@@ -16,14 +16,15 @@
         <div>
             <p class="ml-5"><span class="text-warning big2">M</span><span class="lit2">social</span></p>
         </div>
-        <div>
+        <div class="pl-4">
             <ul>
-                <li class="text-warning"><span class="sicon mr-3"><i class="fas fa-home text-warning"></i></span><span class="stext">Home</span></li>
-                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Meet</span></li>
-                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Messages</span></li>
-                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Notifications</span></li>
-                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Videos</span></li>
-                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Groups</span></li>
+                <a href="#" class="silist"><li class="text-warning"><span class="sicon mr-3"><i class="fas fa-home text-warning"></i></span><span class="stext">Home</span></li></a>
+                <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-user-friends"></i></span><span class="stext">Meet</span></li></a>
+                <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="far fa-envelope"></i></span><span class="stext">Messages</span></li></a>
+                <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="far fa-bell"></i></span><span class="stext">Notifications</span></li></a>
+                <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-video"></i></span><span class="stext">Videos</span></li></a>
+                <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-users"></i></span><span class="stext">Groups</span></li></a>
+                <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-ellipsis-h"></i></span><span class="stext">Discover</span></li></a>
             </ul>
         </div>
     </div>
@@ -49,7 +50,7 @@
                 <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
             </div>
             <div class="nav-item ml-1">
-               <b><input name="post" type="text" class="form-control pt-3 bg-light text-dark" placeholder="What's Happening?" width="100%" style="border: none; font-size: large;"></textarea></b>
+               <input name="post" type="text" class="form-control pt-3 bg-light text-dark" placeholder="What's Happening?" width="100%" style="border: none; font-size: large;"></textarea></b>
             </div>
             <div class="nav-item ml-auto">
                 <button class="btn btn-warning">Post</button>
@@ -60,7 +61,7 @@
             <div>
                 <h5 class="text-dark text-center">Welcome to Msocial</h5>
                 <p class="text-center text-dark">This is the best place to meet people and have fun.<br>Dive in now!!!</p>
-                <center><button class="btn btn-warning ">Let's go</button></center>
+                <center><button class="btn btn-warning btn-lg">Let's go</button></center>
             </div>
         </div>
     </div>

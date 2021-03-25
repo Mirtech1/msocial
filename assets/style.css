@@ -41,11 +41,11 @@ img{
     border-radius: 100px;
 }
 .bbot{
-    border-bottom: solid darkgrey;
+    border-bottom: 1px solid darkgrey;
 }
 .bside{
-    border-left: solid darkgray;
-    border-right: solid darkgrey;
+    border-left: 1px solid darkgray;
+    border-right: 1px solid darkgrey;
 }
 .big2{
     font-size: xx-large;
@@ -62,8 +62,12 @@ ul{
     height: 100vh;
 }
 .sicon{
-    font-size: xxx-large;
+   font-size: larger;
 }
 .stext{
     font-size: x-large;
+}
+.
+silist:hover{
+    text-decoration: none;
 }
