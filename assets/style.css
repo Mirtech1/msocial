@@ -40,3 +40,18 @@ img{
 .rad{
     border-radius: 100px;
 }
+.bbot{
+    border-bottom: solid darkgrey;
+}
+.bside{
+    border-left: solid darkgray;
+    border-right: solid darkgrey;
+}
+.big2{
+    font-size: x-large;
+    font-family: cursive;
+}
+.lit2{
+    font-size: large;
+    font-family: fantasy;
+}

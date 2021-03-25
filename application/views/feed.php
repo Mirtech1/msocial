@@ -10,62 +10,51 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
-<body class="bg-dark">
+<body class="">
     <div class="row">
     <div class="col-3">
-
+        <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <span class="text-warning big2">M</span><span class="lit2">social</span>
+        </nav>
+        </div>
     </div>
     <div class="col-5">
-    <div class="">
+    <div class="bside">
+    <div class="bbot">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-                    <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
+                    <h4>Home</h4>
             <div class="nav-item ml-auto bg-light rad">
-                    <a href="#"><i class="fas fa-search ico text-warning"></i></a>
+                    <a href="#"><i class="fas fa-search ico text-dark"></i></a>
             </div>
             <div class="nav-item ml-2 bg-light rad">
-                <a href="#"><i class="fas fa-user ico text-warning ml-2"></i></a>
+                <a href="#"><i class="fas fa-user ico text-dark ml-3"></i></a>
             </div>
             <div class="nav-item ml-2 bg-light rad">
-                <a href="#"><i class="fas fa-bars ico text-warning ml-2"></i></a>
+                <a href="#"><i class="fas fa-bars ico text-dark ml-3"></i></a>
             </div>
     </nav>
     </div>
-    <div class="">
-    <nav class="navbar nav-expand-lg navbar-light bg-light container-fluid">
-            <div class="nav-item">
-                <a href="#"><i class="fas fa-image text-warning ico"></i></a>
-            </div>
-            <div class="nav-item">
-                <a href="#"><i class=""></i></a>
-            </div>
-            <div class="nav-item">
-                <a href=""><i class=""></i></a>
-            </div>
-            <div class="nav-item">
-                <a href="#"><i class=""></i></a>
-            </div>
-            <div class="nav-item">
-                <a href="#"><i class=""></i></a>
-            </div>
-            <div class="nav-item">
-                <a href="#"><i class=""></i></a>
-            </div>
-    <div class="">
-    </nav>
+    <div class="bbot">
         <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
             <div class="nav-item mt-2">
                 <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
             </div>
             <div class="nav-item ml-1">
-               <input name="post" id="post" cols="50" rows="2" class="form-control pt-3 bg-dark text-light" placeholder="What's Happening?" style="border: none; font-size: x-large;"></textarea>
+               <b><input name="post" type="text" class="form-control pt-3 bg-light text-dark" placeholder="What's Happening?" width="100%" style="border: none; font-size: large;"></textarea></b>
+            </div>
+            <div class="nav-item ml-auto">
+                <button class="btn btn-warning">Post</button>
             </div>
     </nav>
     </div>
         <div class="card-body">
             <div>
-                <a href="#"></a>
+                <h5 class="text-dark text-center">Welcome to Msocial</h5>
+                <p class="text-center text-dark">This is the best place to meet people, have fun</p>
             </div>
         </div>
+    </div>
     </div>
     </div>
     <script src="assets/bootstrap 5/js/bootstrap.js"></script>
