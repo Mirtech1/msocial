@@ -48,10 +48,13 @@ img{
     border-right: solid darkgrey;
 }
 .big2{
-    font-size: x-large;
+    font-size: xx-large;
     font-family: cursive;
 }
 .lit2{
     font-size: large;
     font-family: fantasy;
+}
+ul{
+    list-style-type: none;
 }

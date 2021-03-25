@@ -14,9 +14,13 @@
     <div class="row">
     <div class="col-3">
         <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-            <span class="text-warning big2">M</span><span class="lit2">social</span>
-        </nav>
+            <p class="ml-5"><span class="text-warning big2">M</span><span class="lit2">social</span></p>
+        </div>
+        <div>
+            <ul>
+                <li><span class="fa-li"><i class="fas fa-home"></i></span>Home</li>
+                <li></li>
+            </ul>
         </div>
     </div>
     <div class="col-5">
