@@ -2,6 +2,10 @@ img{
     width: 100vh;
     height: 70%;
 }
+input{
+  outline: none; 
+  background-color: blue; 
+}
 .round{
     height: 50%;
 }
@@ -29,19 +33,22 @@ img{
     font-family: sans-serif;
 }
 .profilePic{
-    height: 65px;
-    width: 65px;
+    height: 50px;
+    width: 50px;
     border: solid goldenrod;
-    border-radius: 100px;
+    border-radius: 50%;
 }
 .ico{
-    font-size: xx-large;
+    font-size: larger;
 }
 .rad{
     border-radius: 100px;
 }
 .bbot{
     border-bottom: 1px solid darkgrey;
+}
+.bbotbig{
+    border-bottom: 7px solid rgba(169, 169, 169, 0.363);
 }
 .bside{
     border-left: 1px solid darkgray;
@@ -73,4 +80,8 @@ ul{
 }
 .silist{
     color: black;
+}
+.main-frame
+{
+    text-align: center;
 }

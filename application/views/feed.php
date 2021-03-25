@@ -12,7 +12,7 @@
 </head>
 <body class="">
     <div class="row">
-    <div class="col-3 sidebar">
+    <div class="col-lg-3 col-sm-0 sidebar">
         <div>
             <p class="ml-5"><span class="text-warning big2">M</span><span class="lit2">social</span></p>
         </div>
@@ -25,10 +25,11 @@
                 <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-video"></i></span><span class="stext">Videos</span></li></a>
                 <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-users"></i></span><span class="stext">Groups</span></li></a>
                 <a href="#" class="silist"><li class="mt-4"><span class="sicon mr-3"><i class="fas fa-ellipsis-h"></i></span><span class="stext">Discover</span></li></a>
+                <a href="#"><button class="btn btn-warning btn-lg blarge mt-4 ml-4">Create a Post</button></a>
             </ul>
         </div>
     </div>
-    <div class="col-5">
+    <div class="col-lg-5 col-sm-12">
     <div class="bside long">
     <div class="bbot">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
@@ -44,24 +45,24 @@
             </div>
     </nav>
     </div>
-    <div class="bbot">
+    <div class="bbotbig">
         <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
             <div class="nav-item mt-2">
                 <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
             </div>
             <div class="nav-item ml-1">
-               <input name="post" type="text" class="form-control pt-3 bg-light text-dark" placeholder="What's Happening?" width="100%" style="border: none; font-size: large;"></textarea></b>
+               <input name="post" type="text" class="form-control pt-3 bg-light text-dark" placeholder="What's Happening?" width="100%" style="border: none; outline:none; font-size: large;"></b>
             </div>
             <div class="nav-item ml-auto">
                 <button class="btn btn-warning">Post</button>
             </div>
-    </nav>
+        </nav>
     </div>
-        <div class="card-body">
+        <div class="card-body main-frame">
             <div>
                 <h5 class="text-dark text-center">Welcome to Msocial</h5>
                 <p class="text-center text-dark">This is the best place to meet people and have fun.<br>Dive in now!!!</p>
-                <center><button class="btn btn-warning btn-lg">Let's go</button></center>
+                <a href="#"><button class="btn btn-warning btn-lg">Let's go</button></a>
             </div>
         </div>
     </div>
