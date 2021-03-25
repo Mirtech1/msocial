@@ -12,14 +12,18 @@
 </head>
 <body class="">
     <div class="row">
-    <div class="col-3">
+    <div class="col-3 sidebar">
         <div>
             <p class="ml-5"><span class="text-warning big2">M</span><span class="lit2">social</span></p>
         </div>
         <div>
             <ul>
-                <li><span class="fa-li"><i class="fas fa-home"></i></span>Home</li>
-                <li></li>
+                <li class="text-warning"><span class="sicon mr-3"><i class="fas fa-home text-warning"></i></span><span class="stext">Home</span></li>
+                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Meet</span></li>
+                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Messages</span></li>
+                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Notifications</span></li>
+                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Videos</span></li>
+                <li class=""><span class="sicon mr-3"><i class=""></i></span><span class="stext">Groups</span></li>
             </ul>
         </div>
     </div>
