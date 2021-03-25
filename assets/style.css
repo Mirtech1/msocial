@@ -29,11 +29,14 @@ img{
     font-family: sans-serif;
 }
 .profilePic{
-    height: 75px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
     border: solid goldenrod;
     border-radius: 100px;
 }
 .ico{
     font-size: xx-large;
+}
+.rad{
+    border-radius: 100px;
 }

@@ -19,29 +19,18 @@
     <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
                     <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
-            <div class="nav-item ml-auto">
-                    <a href="#"><i class=""></i></a>
+            <div class="nav-item ml-auto bg-light rad">
+                    <a href="#"><i class="fas fa-search ico text-warning"></i></a>
             </div>
-            <div class="nav-item ml-2">
-                <a href="#"><i class=""></i></a>
+            <div class="nav-item ml-2 bg-light rad">
+                <a href="#"><i class="fas fa-user ico text-warning ml-2"></i></a>
             </div>
-            <div class="nav-item ml-2">
-                <a href="#"><i class=""></i></a>
+            <div class="nav-item ml-2 bg-light rad">
+                <a href="#"><i class="fas fa-bars ico text-warning ml-2"></i></a>
             </div>
     </nav>
     </div>
     <div class="">
-    </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-            <div class="nav-item mt-2">
-                <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
-            </div>
-            <div class="nav-item ml-1">
-               <input name="post" id="post" cols="50" rows="2" class="form-control pt-3 bg-dark text-light" placeholder="What's Happening?" style="border: none; font-size: x-large;"></textarea>
-            </div>
-    </nav>
-    </div>
-    <div class="card-body">
     <nav class="navbar nav-expand-lg navbar-light bg-light container-fluid">
             <div class="nav-item">
                 <a href="#"><i class="fas fa-image text-warning ico"></i></a>
@@ -61,6 +50,17 @@
             <div class="nav-item">
                 <a href="#"><i class=""></i></a>
             </div>
+    <div class="">
+    </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <div class="nav-item mt-2">
+                <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
+            </div>
+            <div class="nav-item ml-1">
+               <input name="post" id="post" cols="50" rows="2" class="form-control pt-3 bg-dark text-light" placeholder="What's Happening?" style="border: none; font-size: x-large;"></textarea>
+            </div>
+    </nav>
+    </div>
         <div class="card-body">
             <div>
                 <a href="#"></a>
