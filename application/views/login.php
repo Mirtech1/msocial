@@ -10,10 +10,10 @@
 </head>
 <body class="bg-dark">
 <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
-        <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
+        <a href="index" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
         <div class="container-fluid ">
             <div class="nav-item ml-auto">
-                
+            <a href="signup" class="ml-auto nav-item"><button class="btn btn-sm btn-outline-success">Create new account</button></a>
         </div>
     </nav>
         

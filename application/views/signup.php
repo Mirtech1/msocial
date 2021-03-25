@@ -11,7 +11,7 @@
 <body class="bg-dark">
     <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
+            <a href="index" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
             <a href="login" class="ml-auto nav-item"><button class="btn btn-sm btn-outline-primary">Login</button></a>
         </nav>
     </div>
@@ -159,6 +159,9 @@
                 <center><a href="login" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>
             </div>
     </form>
+    </div>
+    <div>
+        <p class="text-center">@Msocial</p>
     </div>
     <script src="assets/form.js"></script>
 </body>

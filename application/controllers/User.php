@@ -21,8 +21,7 @@ class User extends CI_Controller{
     {
       show_404();
     }
-        $this->load->view($page);
-       
+        $this->load->view($page);   
   }
 
   
