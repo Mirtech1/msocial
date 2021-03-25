@@ -16,7 +16,7 @@
 
     </div>
     <div class="col-5">
-    <div class="card-header">
+    <div class="">
     <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
                     <a href="" class="navbar-brand mt-auto"><span class="text-warning big">M</span><span class="lit">social</span></a>
             <div class="nav-item ml-auto">
@@ -30,9 +30,9 @@
             </div>
     </nav>
     </div>
-    <div class="card-body">
+    <div class="">
     </nav>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
             <div class="nav-item mt-2">
                 <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
             </div>
@@ -41,10 +41,10 @@
             </div>
     </nav>
     </div>
-    <div class="card-header">
+    <div class="card-body">
     <nav class="navbar nav-expand-lg navbar-light bg-light container-fluid">
             <div class="nav-item">
-                <a href="#"><i class="fas fa-image text-warning text-lg"></i></a>
+                <a href="#"><i class="fas fa-image text-warning ico"></i></a>
             </div>
             <div class="nav-item">
                 <a href="#"><i class=""></i></a>
