@@ -23,6 +23,12 @@ class User extends CI_Controller{
     }
         $this->load->view($page);   
   }
+  public function getpost()
+  {
+      $post = $this->input->post('post');
+
+      print_r($post);
+  }
 
   
 

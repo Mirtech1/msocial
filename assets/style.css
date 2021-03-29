@@ -2,10 +2,7 @@ img{
     width: 100vh;
     height: 70%;
 }
-input{
-  outline: none; 
-  background-color: blue; 
-}
+
 .round{
     height: 50%;
 }
@@ -15,6 +12,20 @@ input{
 }
 .nodec{
     text-decoration: none;
+}
+#post
+{
+    border: none; 
+    outline:none; 
+    overflow:auto;
+    font-size:15px;
+    height: 20px;
+    width: 100%;
+}
+
+.spread 
+{
+    width: 100%;
 }
 .big{
     font-size: xxx-large;
@@ -72,7 +83,7 @@ ul{
    font-size: larger;
 }
 .stext{
-    font-size: x-large;
+    font-size: larger;
 }
 .silist:hover{
     text-decoration: none;

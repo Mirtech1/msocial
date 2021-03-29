@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Msocial- Your feed</title>
+    <title>Msocial- Meet</title>
     <link rel="stylesheet" href="assets/bootstrap 5/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
@@ -18,9 +18,9 @@
         </div>
         <div class="pl-4">
             <ul>
-                <a href="feed" class="silist"><li class="text-warning"><span class="sicon mr-3"><i class="fas fa-home text-warning"></i></span><span class="stext">Home</span></li></a>
+                <a href="feed" class="silist"><li class=""><span class="sicon mr-3"><i class="fas fa-home "></i></span><span class="stext">Home</span></li></a>
                 <a href="meet" class="silist"><li class="mt-3"><span class="sicon mr-3"><i class="fas fa-user-friends"></i></span><span class="stext">Meet</span></li></a>
-                <a href="messages" class="silist"><li class="mt-3"><span class="sicon mr-3"><i class="far fa-envelope"></i></span><span class="stext">Messages</span></li></a>
+                <a href="messages" class="silist"><li class="mt-3 text-warning"><span class="sicon mr-3"><i class="far fa-envelope text-warning"></i></span><span class="stext">Messages</span></li></a>
                 <a href="notifications" class="silist"><li class="mt-3"><span class="sicon mr-3"><i class="far fa-bell"></i></span><span class="stext">Notifications</span></li></a>
                 <a href="videos" class="silist"><li class="mt-3"><span class="sicon mr-3"><i class="fas fa-video"></i></span><span class="stext">Videos</span></li></a>
                 <a href="groups" class="silist"><li class="mt-3"><span class="sicon mr-3"><i class="fas fa-users"></i></span><span class="stext">Groups</span></li></a>
@@ -45,27 +45,24 @@
             </div>
     </nav>
     </div>
-    <div class="bbotbig p-2">
-        <nav class="navbar navbar-expand-lg navbar-light container-fluid">
+    <div class="bbotbig">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
             <div class="nav-item mt-2">
                 <a href="#"><img src="assets/race.jpg" alt="" class="profilePic"></a>
             </div>
-            <div class="nav-item ml-1 mr-2 spread">
-                <form action="User/getpost" method="post">
-               <input name="post" type="text" id='post'  placeholder="What's Happening?" width="100%" ></b>
-               
+            <div class="nav-item ml-1">
+               <input name="post" type="text" class="form-control pt-3 bg-light text-dark ml-2" placeholder="What's Happening?" width="100%" style="border: none; outline:none; font-size: large;"></b>
             </div>
             <div class="nav-item ml-auto">
-                <input type="submit" class="btn btn-warning" value="post">
+                <button class="btn btn-warning">Post</button>
             </div>
-            </form>
         </nav>
     </div>
         <div class="card-body main-frame">
             <div>
                 <h5 class="text-dark text-center">Welcome to Msocial</h5>
                 <p class="text-center text-dark">This is the best place to meet people and have fun.<br>Dive in now!!!</p>
-                <a href="#"><button class="btn btn-warning ">Let's go</button></a>
+                <a href="#"><button class="btn btn-warning btn-lg">Let's go</button></a>
             </div>
         </div>
     </div>
