@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/api.js"></script>
     <title>Login</title>
 </head>
 <body class="bg-dark">
@@ -27,9 +29,10 @@
     <div class="card-header">
         <h1 class="text-primary text-left">Login</h1>
     </div>
-        <form class="card-body" method="POST" action="User/login">
-        <center><input type="text" class="form-control mb-2" placeholder="Username/Email" required name="email"></center>
-        <center><input type="password" class="form-control mb-2" placeholder="Password" required name="password"></center>
+        <form class="card-body" method="POST" action="User/login" id="loginform">
+        <center><input type="text" class="form-control mb-2" placeholder="Username/Email" required name="email" id="email"></center>
+        <center><input type="password" class="form-control mb-2" placeholder="Password" required name="password" id="password"></center>
+        <div id="error"></div>
         <center><a href="feed"><button class="btn btn-outline-primary btn-lg space" type="submit">Login</button></a></center>
         <center><p class="mt-2"><a href="#">Forgotten Password?</a></p></center>
         </form>

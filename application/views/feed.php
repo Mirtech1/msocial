@@ -24,6 +24,8 @@ if (isset($this->session->userdata['logged_in'])) {
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/api.js"></script>
 </head>
 <body class="">
     <div class="row">
@@ -78,7 +80,7 @@ if (isset($this->session->userdata['logged_in'])) {
     </div>
         <div class="card-body main-frame">
             <div>
-                <h5 class="text-dark text-center">Welcome to Msocial <span><?php echo($fname); ?></span></h5>
+                <h5 class="text-dark text-center">Welcome to Msocial <span style="text-transform:capitalize;"><?php echo($fname); ?></span></h5>
                 <p class="text-center text-dark">This is the best place to meet people and have fun.<br>Dive in now!!!</p>
                 <a href="#"><button class="btn btn-warning ">Let's go</button></a>
             </div>

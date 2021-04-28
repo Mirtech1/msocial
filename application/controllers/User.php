@@ -60,7 +60,7 @@ public function login(){
 		$data['password'] = $this->input->post('password');
     $query = $this->User_model->ValidateEntry($data);
 
-    if ($query = true) {
+    if ($query == true) {
       $fetchdata = $this->User_model->fetchUserData($data);
 
       $session_data = array(
@@ -79,8 +79,8 @@ public function login(){
 			$response['message'] = 'user logged in';
     }
 		else{
-			$response['error']= true;
-			$response['message'] = 'No User found in the database';
+			$response['error'] = true;
+			$response['message'] = 'Invalid Details';
 		}
 
 		echo json_encode($response);
