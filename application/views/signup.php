@@ -21,32 +21,32 @@
        <center><h1 class="text-success text-left">Sign Up</h1></center>
        <p class="text-left">It's quick and easy</p>
        </div>
-       <form class="card-body" onsubmit="return clickBut()" action="submit">
+       <form class="card-body" method="POST" action="User/register">
        <h6 class="text-left mb-1 mt-2"><strong>Name</strong></h6>
            <div class="row">
                <div class="col-6">
                 <p id="fName" class="mb-0 mt-0"></p>
-                <center><input type="text" class="form-control mb-3" placeholder="First name" id="fname" onkeyup="fNameCheck()"></center>
+                <center><input type="text" name="fName" class="form-control mb-3" placeholder="First name" id="fname" onkeyup="fNameCheck()"></center>
                </div>
                <div class="col-6">
                    <p id="lName" class="mb-0 mt-0"></p>
-                <center><input type="text" class="form-control mb-3" placeholder="Last name" id="lname" onkeyup="lNameCheck()"></center>
+                <center><input type="text" name="lName" class="form-control mb-3" placeholder="Last name" id="lname" onkeyup="lNameCheck()"></center>
               </div>
             </div>
     <div class="row">
             <div class="col-6">
                 <p id="email" class="mb-0 mt-0"></p>
-                <center><input type="text" class="form-control mb-3" placeholder="Email" id="Email" onkeyup="emailCheck()"></center>
+                <center><input type="text" name="email" class="form-control mb-3" placeholder="Email" id="Email" onkeyup="emailCheck()"></center>
                 </div>
                 <div class="col-6">
                     <p id="uName" class="mb-0 mt-0"></p>
-                <center><input type="text" class="form-control mb-3" placeholder="Username" id="username" onkeyup="uNameCheck()"></center>
+                <center><input type="text" name="uName" class="form-control mb-3" placeholder="Username" id="username" onkeyup="uNameCheck()"></center>
                 </div>
             </div>
             <h6 class="text-left mb-1 "><strong>Date of Birth</strong></h6>
                 <div class="row">
                     <div class="col-3">
-                        <select class="form-control">
+                        <select class="form-control" name="day">
                             <option disabled selected>Day</option>
                             <option>1</option>
                             <option>2</option>
@@ -82,7 +82,7 @@
                         </select>
                     </div>
                     <div class="col-3">
-                        <select class="form-control">
+                        <select class="form-control" name="month">
                             <option disabled selected>Month</option>
                             <option>January</option>
                             <option>February</option>
@@ -99,7 +99,7 @@
                         </select>
                     </div>
                     <div class="col-3">
-                        <select class="form-control">
+                        <select class="form-control" name="year">
                             <option disabled selected>Year</option>
                             <option>1975</option>
                             <option>1976</option>
@@ -138,22 +138,22 @@
             <h6 class="text-left mb-1 mt-2"><strong>Gender</strong></h6>
             <div class="row">
                 <div class="form-check col-3 ml-3 form-control">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="gender">
                     <label class="form-check-label" for="flexRadioDefault1">Male</label>
                   </div>
                   <div class="form-check col-3 ml-2 form-control">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" name="gender" checked>
                     <label class="form-check-label" for="flexRadioDefault2">Female</label>
                   </div>
                   <div class="form-check col-3 form-control ml-2">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" name="gender" checked>
                     <label class="form-check-label" for="flexRadioDefault2">Other</label>
                   </div>
             </div>
             <h6 class="text-left mb-1 mt-2"><strong>Security</strong></h6>
             <div>
                 <p class="mb-0 mt-0" id="length"></p>
-                <center><input type="password" class="form-control mb-3" id="pass" placeholder="Password" onkeyup="checkLength()"></center>
+                <center><input type="password" class="form-control mb-3" id="pass" placeholder="Password" onkeyup="checkLength()" name="pass"></center>
                 <p id="errorMessage" class="mb-0 mt-0"></p>
                 <center><input type="password" class="form-control mb-3" id="copass" placeholder="Confirm password" onkeyup="myFunction()"></center>
                 <center><a href="login" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>

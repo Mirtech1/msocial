@@ -1,3 +1,18 @@
+<?php 
+if (isset($this->session->userdata['logged_in'])) {
+    $email = ($this->session->userdata['logged_in']['email']);
+    $fname = ($this->session->userdata['logged_in']['fname']);
+    $lname = ($this->session->userdata['logged_in']['lname']);
+    // $uname = ($this->session->userdata['logged_in']['uname']);
+    $day = ($this->session->userdata['logged_in']['day']);
+	$month = ($this->session->userdata['logged_in']['month']);
+    $year = ($this->session->userdata['logged_in']['year']);
+    $gender = ($this->session->userdata['logged_in']['gender']);
+
+    } else {
+    header("location: login");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +27,7 @@
 </head>
 <body class="">
     <div class="row">
-    <div class="col-lg-3 col-sm-0">
+    <div class="col-lg-3 showHide">
         <div>
             <p class="ml-5"><span class="text-warning big2">M</span><span class="lit2">social</span></p>
         </div>
@@ -63,7 +78,7 @@
     </div>
         <div class="card-body main-frame">
             <div>
-                <h5 class="text-dark text-center">Welcome to Msocial</h5>
+                <h5 class="text-dark text-center">Welcome to Msocial <span><?php echo($fname); ?></span></h5>
                 <p class="text-center text-dark">This is the best place to meet people and have fun.<br>Dive in now!!!</p>
                 <a href="#"><button class="btn btn-warning ">Let's go</button></a>
             </div>
@@ -73,5 +88,6 @@
     </div>
     <script src="assets/bootstrap 5/js/bootstrap.js"></script>
     <script src="assets/fontawesome/js/all.js"></script>
+    <script src="assets/acc.js"></script>
 </body>
 </html>

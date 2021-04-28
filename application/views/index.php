@@ -1,3 +1,8 @@
+<?php
+if(isset($this->session->userdata['logged_in'])){
+	header("location: feed");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

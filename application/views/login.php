@@ -1,3 +1,8 @@
+<?php
+ if(isset($this->session->userdata['logged_in'])){
+ 	header("location: feed");
+}
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +27,9 @@
     <div class="card-header">
         <h1 class="text-primary text-left">Login</h1>
     </div>
-        <form class="card-body">
-        <center><input type="text" class="form-control mb-2" placeholder="Username/Email" required></center>
-        <center><input type="password" class="form-control mb-2" placeholder="Password" required></center>
+        <form class="card-body" method="POST" action="User/login">
+        <center><input type="text" class="form-control mb-2" placeholder="Username/Email" required name="email"></center>
+        <center><input type="password" class="form-control mb-2" placeholder="Password" required name="password"></center>
         <center><a href="feed"><button class="btn btn-outline-primary btn-lg space" type="submit">Login</button></a></center>
         <center><p class="mt-2"><a href="#">Forgotten Password?</a></p></center>
         </form>

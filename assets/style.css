@@ -80,10 +80,10 @@ ul{
     height: 100vh;
 }
 .sicon{
-   font-size: larger;
+   font-size: x-large;
 }
 .stext{
-    font-size: larger;
+    font-size: x-large;
 }
 .silist:hover{
     text-decoration: none;
@@ -95,4 +95,7 @@ ul{
 .main-frame
 {
     text-align: center;
+}
+.collapse{
+    display: none;
 }

@@ -1,11 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class User extends CI_Controller{
-    
+class User extends CI_Controller {
+
+
     function __construct(){
         parent::__construct();
-         $this->load->model('user_model','user');
-       
+         $this->load->model('User_model');
+         $this->load->helper('form', 'url');
+         $this->load->library('session');
+         $this->load->helper('download');
+         $this->load->library('form_validation');
     }
 
     /**public function index(){
@@ -23,185 +27,74 @@ class User extends CI_Controller{
     }
         $this->load->view($page);   
   }
-  public function getpost()
-  {
-      $post = $this->input->post('post');
+  public function register(){
+    $data['fname'] = $this->input->post('fName');
+    $data['lname'] = $this->input->post('lName');
+    $data['uname'] = $this->input->post('uName');
+    $data['day'] = $this->input->post('day');
+    $data['month'] = $this->input->post('month');
+    $data['year'] = $this->input->post('year');
+    $data['gender'] = $this->input->post('gender');
+    $data['email'] = $this->input->post('email');
+    $data['pass'] = $this->input->post('pass');
 
-      print_r($post);
-  }
+
+    $query = $this->User_model->Verify($data);
+    if($query == true)
+    {
+        $response['error'] = true;
+        $response['message'] = 'Email Already Exists';
+    }
+    else{
+      $insert = $this->User_model->insert($data);
+        $response['error'] = false;
+        $response['message'] = 'User successfully Registered';
+    }
+
+    echo json_encode($response);
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-     public function showAll(){
-       $query=  $this->user->showAll();
-             if($query){
-                   $result['users']  = $this->user->showAll();
-             }
-        echo json_encode($result);
-    }
-     public function addUser(){
-		$config = array(
-        array('field' => 'firstname',
-              'label' => 'Firstname',
-              'rules' => 'trim|required'
-             ),
-             array('field' => 'lastname',
-              'label' => 'Lastname',
-              'rules' => 'trim|required'
-             ),
-             array('field' => 'gender',
-              'label' => 'Gender',
-              'rules' => 'required'
-             ),
-             array('field' => 'birthday',
-              'label' => 'Birthday',
-              'rules' => 'trim|required'
-             ),
-             array('field' => 'email',
-              'label' => 'Email',
-              'rules' => 'trim|required'
-             ),
-               array(
-                'field' => 'contact',
-                'label' => 'Contact',
-                'rules' => 'trim|required'
-               ),
-        array(
-                'field' => 'address',
-                'label' => 'Address',
-                'rules' => 'trim|required'
-        )
-);
-$this->form_validation->set_rules($config);
-        if ($this->form_validation->run() == FALSE) {
-            $result['error'] = true;
-            $result['msg'] = array(
-                'firstname'=>form_error('firstname'),
-                'lastname'=>form_error('lastname'),
-                'gender'=>form_error('gender'),
-                'birthday'=>form_error('birthday'),
-                'email'=>form_error('email'),
-                'contact'=>form_error('contact'),
-                'address'=>form_error('address')
-            );
-            
-        }else{
-                $data = array(
-                'firstname'=> $this->input->post('firstname'),
-                'lastname'=> $this->input->post('lastname'),
-                'gender'=> $this->input->post('gender'),
-                'birthday'=> $this->input->post('birthday'),
-                'email'=> $this->input->post('email'),
-                'contact'=> $this->input->post('contact'),
-                'address'=> $this->input->post('address')
-                
-            );
-            if($this->user->addUser($data)){
-               $result['error'] = false;
-                $result['msg'] ='User added successfully';
-            }
-            
-        }
-        echo json_encode($result);
-    }
-
-     public function updateUser(){		
-         $config = array(
-        array('field' => 'firstname',
-              'label' => 'Firstname',
-              'rules' => 'trim|required'
-             ),
-             array('field' => 'lastname',
-              'label' => 'Lastname',
-              'rules' => 'trim|required'
-             ),
-             array('field' => 'gender',
-              'label' => 'Gender',
-              'rules' => 'required'
-             ),
-             array('field' => 'birthday',
-              'label' => 'Birthday',
-              'rules' => 'trim|required'
-             ),
-             array('field' => 'email',
-              'label' => 'Email',
-              'rules' => 'trim|required'
-             ),
-               array(
-                'field' => 'contact',
-                'label' => 'Contact',
-                'rules' => 'trim|required'
-               ),
-        array(
-                'field' => 'address',
-                'label' => 'Address',
-                'rules' => 'trim|required'
-        )
-);
-$this->form_validation->set_rules($config);
-        if ($this->form_validation->run() == FALSE) {
-            $result['error'] = true;
-            $result['msg'] = array(
-                 'firstname'=>form_error('firstname'),
-                'lastname'=>form_error('lastname'),
-                'gender'=>form_error('gender'),
-                'birthday'=>form_error('birthday'),
-                'email'=>form_error('email'),
-                'contact'=>form_error('contact'),
-                'address'=>form_error('address')
-            );
-            
-        }else{
-          $id = $this->input->post('id');
-          $data = array(
-                   'firstname'=> $this->input->post('firstname'),
-                'lastname'=> $this->input->post('lastname'),
-                'gender'=> $this->input->post('gender'),
-                'birthday'=> $this->input->post('birthday'),
-                'email'=> $this->input->post('email'),
-                'contact'=> $this->input->post('contact'),
-                'address'=> $this->input->post('address')
-            );
-                if($this->user->updateUser($id,$data)){
-                    $result['error'] = false;
-                    $result['success'] = 'User updated successfully';
-                }
-       
-    }
-          echo json_encode($result);
-     }
-    public function deleteUser(){
-         $id = $this->input->post('id');
-        if($this->user->deleteUser($id)){
-             $msg['error'] = false;
-            $msg['success'] = 'User deleted successfully';
-        }else{
-             $msg['error'] = true;
-        }
-        echo json_encode($msg);
-         
-    }
-       public function searchUser(){
-         $value = $this->input->post('text');
-          $query =  $this->user->searchUser($value);
-           if($query){
-               $result['users']= $query;
-           }
-           
-        echo json_encode($result);
-         
-    }
 }
-    
+public function login(){
+  $data['email'] = $this->input->post('email');
+		$data['password'] = $this->input->post('password');
+    $query = $this->User_model->ValidateEntry($data);
+
+    if ($query = true) {
+      $fetchdata = $this->User_model->fetchUserData($data);
+
+      $session_data = array(
+				'email' => $fetchdata[0]->email, 
+				'fname' => $fetchdata[0]->fname, 
+				'lname' => $fetchdata[0]->lname, 
+				'uname' => $fetchdata[0]->uname, 
+				'day' => $fetchdata[0]->day,
+				'month' => $fetchdata[0]->month, 
+				'year' => $fetchdata[0]->year, 
+				'gender' => $fetchdata[0]->gender
+
+				);
+        $this->session->set_userdata('logged_in', $session_data);
+			$response['error'] = false;
+			$response['message'] = 'user logged in';
+    }
+		else{
+			$response['error']= true;
+			$response['message'] = 'No User found in the database';
+		}
+
+		echo json_encode($response);
+	}
+  public function LogOut(){
+		$sess_array = array(
+			'username' => ''
+			);
+			$this->session->unset_userdata('logged_in', $sess_array);
+			header('location:'.base_url('login'));
+	}
+
+
+} 
+
+  
+ 
