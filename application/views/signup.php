@@ -23,7 +23,7 @@
        <center><h1 class="text-success text-left">Sign Up</h1></center>
        <p class="text-left">It's quick and easy</p>
        </div>
-       <form class="card-body" method="POST" action="User/register">
+       <form class="card-body" method="POST" action="User/register" id="reg">
        <h6 class="text-left mb-1 mt-2"><strong>Name</strong></h6>
            <div class="row">
                <div class="col-6">
@@ -158,6 +158,7 @@
                 <center><input type="password" class="form-control mb-3" id="pass" placeholder="Password" onkeyup="checkLength()" name="pass"></center>
                 <p id="errorMessage" class="mb-0 mt-0"></p>
                 <center><input type="password" class="form-control mb-3" id="copass" placeholder="Confirm password" onkeyup="myFunction()"></center>
+                <div id="error"></div>
                 <center><a href="login" target=""><button class="btn btn-outline-success btn-lg mb-1 space" type="submit" onclick="clickBut()">Sign up</button></a></center>
             </div>
     </form>

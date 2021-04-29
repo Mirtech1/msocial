@@ -49,6 +49,21 @@ class User extends CI_Controller {
       $insert = $this->User_model->insert($data);
         $response['error'] = false;
         $response['message'] = 'User successfully Registered';
+
+        $fetchdata = $this->User_model->sessReg($data);
+
+      $session_data = array(
+				'email' => $fetchdata[0]->email, 
+				'fname' => $fetchdata[0]->fname, 
+				'lname' => $fetchdata[0]->lname, 
+				'uname' => $fetchdata[0]->uname, 
+				'day' => $fetchdata[0]->day,
+				'month' => $fetchdata[0]->month, 
+				'year' => $fetchdata[0]->year, 
+				'gender' => $fetchdata[0]->gender
+
+				);
+        $this->session->set_userdata('logged_in', $session_data);
     }
 
     echo json_encode($response);

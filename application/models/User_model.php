@@ -55,6 +55,21 @@ public function fetchUserData($data){
   }
 }
 
+public function sessReg($data){
+  $condition = "email =" . "'" . $data['email'] . "' AND " . "pass =" . "'" . $data['pass'] . "'";
+  $this->db->select('*');
+  $this->db->from('users');
+  $this->db->where($condition);
+  $this->db->limit(1);
+  $query = $this->db->get();
+  
+  if ($query->num_rows() > 0) {
+  return $query->result();
+  } else {
+  return false;
+  }
+}
+
 
 
 
